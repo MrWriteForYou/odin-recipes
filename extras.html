@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore recipe comparisons, cooking media, and feedback for Odin Recipes.">
+    <title>More Features | Odin Recipes</title>
+</head>
+<body>
+
+    <header>
+        <h1>More About Our Recipes</h1>
+        <p>Compare dishes, explore cooking media, and share your feedback.</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes/lasagna.html">Lasagna</a></li>
+                <li><a href="recipes/risotto.html">Risotto</a></li>
+                <li><a href="recipes/pizza.html">Pizza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Recipe Comparison Table -->
+        <section>
+            <h2>Recipe Comparison</h2>
+
+            <p>
+                Use this table to compare the three recipes featured on our website.
+            </p>
+
+            <table>
+                <caption>Comparison of Our Featured Recipes</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Recipe</th>
+                        <th scope="col">Main Ingredient</th>
+                        <th scope="col">Cooking Method</th>
+                        <th scope="col">Category</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Lasagna</th>
+                        <td>Pasta</td>
+                        <td>Baking</td>
+                        <td>Main Dish</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Risotto</th>
+                        <td>Rice</td>
+                        <td>Stovetop Cooking</td>
+                        <td>Main Dish</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Pizza</th>
+                        <td>Dough</td>
+                        <td>Baking</td>
+                        <td>Main Dish</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Multimedia -->
+        <section>
+            <h2>Watch a Cooking Demonstration</h2>
+
+            <p>
+                Watch this video to see an example of pizza preparation.
+            </p>
+
+            <!-- This is copied from the youtube video's embed since the video creator disabled embedding for this video -->>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dsQGMhsvIYY?si=ohLJp8e5oLi45109" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h3>Video Description</h3>
+            <p>
+                The video demonstrates the preparation of pizza, including
+                preparing the dough, adding toppings, and baking.
+            </p>
+        </section>
+
+        <!-- Feedback Form -->
+        <section>
+            <h2>Leave Your Feedback</h2>
+
+            <p>
+                Tell us what you think about the recipes featured on our website.
+            </p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <p>
+                        <label for="visitor-name">Name:</label>
+                        <input
+                            type="text"
+                            id="visitor-name"
+                            name="visitor-name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="visitor-email">Email:</label>
+                        <input
+                            type="email"
+                            id="visitor-email"
+                            name="visitor-email"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Feedback</legend>
+
+                    <p>
+                        <label for="favorite-recipe">Which recipe did you like most?</label>
+
+                        <select id="favorite-recipe" name="favorite-recipe" required>
+                            <option value="">Choose a recipe</option>
+                            <option value="lasagna">Lasagna</option>
+                            <option value="risotto">Risotto</option>
+                            <option value="pizza">Pizza</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="rating">How would you rate our website?</label>
+
+                        <select id="rating" name="rating" required>
+                            <option value="">Choose a rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Good</option>
+                            <option value="2">Fair</option>
+                            <option value="1">Needs Improvement</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label>
+                    </p>
+
+                    <p>
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="5"
+                            cols="40"
+                            placeholder="Write your feedback here..."
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+
+            <p>
+                Note: This is just an HTML demonstration form. It does not store
+                feedback or send it to a website owner because it is not
+                connected to a server or form-processing service.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Odin Recipes. Thank you for visiting!</p>
+        <p><a href="index.html">Return to Homepage</a></p>
+    </footer>
+
+</body>
+</html>
